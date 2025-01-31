@@ -1,0 +1,80 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between the model and the gallery */
+}
+
+#humanModel {
+    position: relative;
+    width: 400px; /* Adjust as needed */
+}
+
+#humanModel img {
+    width: 400px;
+    display: block;
+}
+
+#leftEarring, #rightEarring {
+    position: absolute;
+    width: 60px; /* Adjust size of earring piece */
+    height: 25px; /* Adjust size of earring piece */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#leftEarring {
+    top: 154px; /* Adjust vertically to fit the earring on the model */
+    left: 160px; /* Adjust horizontally to fit the earring on the model */
+}
+
+#rightEarring {
+    top: 200px; /* Adjust vertically to fit the earring on the model */
+    right: 25px; /* Adjust horizontally to fit the earring on the model */
+}
+
+#sliderContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+#skinToneSlider {
+    width: 200px; /* Adjust as needed */
+}
+
+#image-gallery {
+    display: inline;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    justify-content: center;
+    margin: 10px;
+}
+
+#image-gallery img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991px) {
+    #leftEarring {
+        top: 122px;
+        left: 28px;
+    }
+    #rightEarring {
+        top: 125px;
+        right: -8px;
+    }
+    #leftEarring, #rightEarring{
+        height: 14px;
+    }
+}
