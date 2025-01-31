@@ -85,7 +85,7 @@
     <script  src="{{ static_asset('assets/js/vendor/jquery-3.4.1.min.js') }}"></script>
 
    <!--  Schema Tag- -->
-    {{-- <script  type="application/ld+json">
+    <script  type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -95,7 +95,7 @@
       "logo": "https://bautlr.com/public/uploads/all/4MN2v2ndHZQUf4PHhdc6xHasNcbnj9xGtohmk9ar.webp",
       "sameAs": "https://www.instagram.com/bautlr_official"
     }
-    </script> --}}
+    </script>
 
     <script >
         var AIZ = AIZ || {};
@@ -277,7 +277,7 @@
     <script  src="{{ static_asset('assets/js/jquery.ui.js') }}" ></script>
     <script  src="{{ static_asset('assets/js/jquery.nice.select.js') }}"></script>
     <script  src="{{ static_asset('assets/js/plugins.js') }}" ></script>
-    <script  src="{{ static_asset('assets/js/jquery.elevatezoom.js') }}" ></script>
+    {{-- <script  src="{{ static_asset('assets/js/jquery.elevatezoom.js') }}" ></script> --}}
     <script  src="{{ static_asset('assets/js/imagesloaded.js') }}" ></script>
     <script  src="{{ static_asset('assets/js/isotope.main.js') }}" ></script>
     <script  src="{{ static_asset('assets/js/jqquery.ripples.js') }}" ></script>
@@ -662,7 +662,7 @@
             $('#new-customer-modal').modal('show');
         }
 	
-$(window).on('scroll',function() {
+            $(window).on('scroll',function() {
 		   //alert('dafadsfdsf');
            var scroll = $(window).scrollTop();
            if (scroll < 150) {

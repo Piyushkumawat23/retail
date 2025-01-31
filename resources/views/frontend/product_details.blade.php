@@ -127,7 +127,7 @@
 
                                                        
                                         ?>
-                                    <img loading="lazy" class="product-zoom-thumbs" id="zoom{{$i}}" src="{{ uploaded_asset($photo) }}" data-zoom-image="{{ uploaded_asset($photo) }}"  title="{{ uploaded_asset($photo) }}" alt="{{ uploaded_asset($photo) }}"
+                                    <img  class="product-zoom-thumbs" id="zoom{{$i}}" src="{{ uploaded_asset($photo) }}" data-zoom-image="{{ uploaded_asset($photo) }}"  title="{{ uploaded_asset($photo) }}" alt="{{ uploaded_asset($photo) }}"
                                     onerror="this.onerror=null;this.src='{{ $product_image }}';">
                                     <?php
 
@@ -145,7 +145,7 @@
                                  @foreach ($photos as $key => $photo)
                                 <li>
                                     <a href="#" class="elevatezoom-gallery" data-update="" data-image="{{ uploaded_asset($photo) }}" data-zoom-image="{{ uploaded_asset($photo) }}">
-                                        <img loading="lazy" 
+                                        <img  
                                         src="{{ uploaded_asset($photo) }}" alt="{{ uploaded_asset($photo) }}" 
                                         onerror="this.onerror=null;this.src='{{ $product_image }}';"/>
                                     </a>
@@ -220,7 +220,7 @@
                                                     style="border: 1px solid #ededed;padding: 5px;text-align: center;" 
                                                 >
 
-                                                <img loading="lazy" class="img-fit lazyload h-xxl-80px h-xl-20px h-auto" src="{{ uploaded_asset($value->thumbnail_img ) }}" alt="">
+                                                <img  class="img-fit lazyload h-xxl-80px h-xl-20px h-auto" src="{{ uploaded_asset($value->thumbnail_img ) }}" alt="">
                                                 </a>   
                                                  
                                             </div>
@@ -574,7 +574,7 @@
 
                                     <div class="reviews_comment_box">
                                         <!-- <div class="comment_thmb">
-                                            <img loading="lazy" 
+                                            <img  
                                             src="{{ static_asset('assets/img/placeholder.webp') }}"
                                             style="max-width:35% !important" 
                                             onerror="this.onerror=null;this.src='{{ static_asset('assets/img/placeholder.webp') }}';"
@@ -673,8 +673,8 @@
                                 <div class="custom-col-5 aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white margin_left">
                                     <div class="single_product">
                                         <div class="product_thumb">
-                                            <a class="primary_img" href="{{ route('product', $top_product->slug) }}"><img loading="lazy" src="{{ uploaded_asset($top_product->thumbnail_img) }}" class="img-fit lazyload mx-auto h-200px h-md-330px" alt=""></a>
-                                            <a class="secondary_img" href="{{ route('product', $top_product->slug) }}"><img loading="lazy" src="{{ uploaded_asset($top_product->thumbnail_img) }}" class="img-fit lazyload mx-auto h-200px h-md-330px" alt=""></a><!-- 
+                                            <a class="primary_img" href="{{ route('product', $top_product->slug) }}"><img  src="{{ uploaded_asset($top_product->thumbnail_img) }}" class="img-fit lazyload mx-auto h-200px h-md-330px" alt=""></a>
+                                            <a class="secondary_img" href="{{ route('product', $top_product->slug) }}"><img  src="{{ uploaded_asset($top_product->thumbnail_img) }}" class="img-fit lazyload mx-auto h-200px h-md-330px" alt=""></a><!-- 
                                             <div class="quick_button">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" data-placement="top" data-original-title="quick view"> quick view</a>
                                             </div> -->
@@ -785,7 +785,7 @@
                             <div class="form-group">
                                 <div id="container">
                                 <div id="humanModel">
-                                    <img loading="lazy" src="{{ static_asset('assets/img/DarkToneFace3.jpg') }}" alt="Human Model" id="modelImage">
+                                    <img  src="{{ static_asset('assets/img/DarkToneFace3.jpg') }}" alt="Human Model" id="modelImage">
                                     <div id="leftEarring"></div><!-- 
                                     <div id="rightEarring"></div> -->
                                     <div id="sliderContainer">
@@ -794,16 +794,16 @@
                                 </div>
                                 <div id="image-gallery">
                                     <figure>
-                                        <img loading="lazy" src="{{ static_asset('assets/img/jewelry1.png') }}" alt="Image 1" width="50" height="50">
+                                        <img  src="{{ static_asset('assets/img/jewelry1.png') }}" alt="Image 1" width="50" height="50">
                                     </figure>
                                     <figure>
-                                        <img loading="lazy" src="{{ static_asset('assets/img/jewelry2.png') }}" alt="Image 2" width="50" height="50">
+                                        <img  src="{{ static_asset('assets/img/jewelry2.png') }}" alt="Image 2" width="50" height="50">
                                     </figure>
                                     <figure>
-                                        <img loading="lazy" src="{{ static_asset('assets/img/jewelry3.png') }}" alt="Image 3" width="50" height="50">
+                                        <img  src="{{ static_asset('assets/img/jewelry3.png') }}" alt="Image 3" width="50" height="50">
                                     </figure>
                                     <figure>
-                                        <img loading="lazy" src="{{ static_asset('assets/img/jewelry4.png') }}" alt="Image 4" width="50" height="50">
+                                        <img  src="{{ static_asset('assets/img/jewelry4.png') }}" alt="Image 4" width="50" height="50">
                                     </figure>
                                     <!-- Add more images here -->
                                 </div>
@@ -1097,7 +1097,7 @@
                         }
                          //$("#loader").css("display",'none');
                          /*$( "#zoom2" ).empty();
-                          $( "#zoom2" ).append("<img loading="lazy"  id='yourImageID' src='https://hamza.es/assets/images/logo.png' data-zoom-image='https://hamza.es/assets/images/logo.png' alt=''>");
+                          $( "#zoom2" ).append("<img   id='yourImageID' src='https://hamza.es/assets/images/logo.png' data-zoom-image='https://hamza.es/assets/images/logo.png' alt=''>");
                         $("#zoom2").elevateZoom({tint:true, tintColour:'#01714d', tintOpacity:0.5, scrollZoom : true });  */ 
                    },
                   error: function(e) {

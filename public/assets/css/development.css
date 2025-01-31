@@ -181,9 +181,9 @@ border: 1px solid var(--custom-color) !important;}
     overflow: hidden; /* Ensures hover content stays inside */
 }
 
-.product_thumb img{
+/* .product_thumb img{
     height: 250px;
-}
+} */
 
 
 
@@ -792,7 +792,12 @@ a:hover {
         margin-bottom: 0px !important;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 991px) {   
+        .product_thumb img {
+            height: 130px ;
+            max-height: 250px !important;
+        }
+    
     .chat-user-list-wrap {
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
