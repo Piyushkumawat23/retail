@@ -184,9 +184,11 @@ border: 1px solid var(--custom-color) !important;}
 }
 
 
-
+.product_thumb img {
+    transition: all 0.3s ease-in-out; /* Smooth effect */
+    max-height: 100%; /* Default state */
+}
 .product_thumb:hover img {
-    object-fit: cover;
     min-height: 335px;
     max-height: 335px; /* Apply max height on hover */
 }
