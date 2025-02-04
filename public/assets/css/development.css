@@ -179,13 +179,17 @@ border: 1px solid var(--custom-color) !important;}
 .product_thumb {
     position: relative;
     overflow: hidden; /* Ensures hover content stays inside */
+    max-height: 335px;
+   
 }
 
-/* .product_thumb img{
-    height: 250px;
-} */
 
 
+.product_thumb:hover img {
+    object-fit: cover;
+    min-height: 335px;
+    max-height: 335px; /* Apply max height on hover */
+}
 
 
 .secondary-video {
@@ -736,7 +740,10 @@ a:hover {
         column-count: 2;
         column-gap: 15px;
     }
-
+    .product_thumb img {
+        height: 130px ;
+        max-height: 250px !important;
+    }
     .blogs-card img {
         height: 200px;
     }
@@ -765,7 +772,7 @@ a:hover {
         column-count: 1;
         column-gap: 10px;
     }
-
+   
     .breadcrumbs_area .breadcrumb_content{
         border-top:none;
         padding-top: 10px;        
@@ -1360,6 +1367,7 @@ a, button, input, textarea, .btn, .has-transition {
 #featured .slick-slide{/*padding-left: 5px !important;padding-right: 5px !important;*/}
 .product_container .custom-col-5{/*max-width: 95%;*/}
 .margin_left{margin-left:10px !important}
+.margin_left{margin-right:10px !important}
 .aiz-main-wrapper{background:#faf8f68a !important}
 .single_product_box .custom-col-5{/*border: .2rem solid #faf8f6 !important;*/     /*border: .2rem solid #cebaa5 !important; */box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);}
 .single_product:hover{box-shadow:none !important}
@@ -1374,7 +1382,7 @@ a, button, input, textarea, .btn, .has-transition {
 /*.banner_section .banner_size{height: 500px; width: 500px;}*/
 
 .gutters-5 {
-    margin-right: -5px;
+    margin-right: 5px;
     margin-left: -5px;
 }
 .gutters-5 > .col,
@@ -1582,7 +1590,7 @@ a, button, input, textarea, .btn, .has-transition {
 
     .new_features {
         flex-direction: column; /* Stack features vertically on mobile */
-        gap: 30px; /* Reduce the gap for mobile */
+        gap: 30px !important; /* Reduce the gap for mobile */
         align-items: center;
     }
 
@@ -2093,7 +2101,7 @@ a, button, input, textarea, .btn, .has-transition {
         max-width: 100% !important;
     }
     .product_list{
-        width: auto !important;
+        /* width: auto !important; */
         max-width: 50% !important;
     }
     .new-header{margin-bottom: 0px !important;}
