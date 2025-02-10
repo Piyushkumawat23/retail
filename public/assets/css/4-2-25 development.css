@@ -186,10 +186,7 @@ border: 1px solid var(--custom-color) !important;}
 } */
 
 
-.product_thumb:hover img {
-    /* min-height: 335px !important;
-    max-height: 245px !important; Apply max height on hover */
-}
+
 
 .secondary-video {
     width: 100%;
