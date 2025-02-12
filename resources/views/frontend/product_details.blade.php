@@ -556,6 +556,10 @@
                                 </li>
                             <?php } ?>
 
+                            <li>
+                                <a data-bs-toggle="tab" href="#about_product" role="tab" aria-controls="about_product" aria-selected="false">About Product</a>
+                            </li>
+
                             </ul>
                         </div>
                         <div class="tab-content">
@@ -631,6 +635,14 @@
                                     @endif 
                                 </div>    
                             </div>
+
+                            <!-- About Product Tab -->
+                            <div class="tab-pane fade" id="about_product" role="tabpanel">
+                                <div class="product_instruction">
+                                    <h5>About Product:</h5>
+                                    <p><?php echo get_setting('product_instruction'); ?></p>
+                                </div>  
+                            </div>
                         </div>
                     </div>     
                 </div>
@@ -639,7 +651,7 @@
     </div>  
 
 
-    <div class="product_d_info">
+    {{-- <div class="product_d_info">
         <div class="container">   
             <div class="row">
                 <div class="col-12">
@@ -652,7 +664,9 @@
                 </div>
             </div>
         </div>    
-    </div> 
+    </div>  --}}
+
+
     <!--product info end-->
     
     <!--product section area start-->
