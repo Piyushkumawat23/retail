@@ -180,10 +180,10 @@ border: 1px solid var(--custom-color) !important;}
     position: relative;
     overflow: hidden; /* Ensures hover content stays inside */
 }
-
-/* .product_thumb img{
-    height: 250px;
-} */
+/* ///////////////////////////////////////////////////////////////// */
+.product_thumb img{
+    max-height: 250px;
+}
 
 
 .product_thumb:hover img {
@@ -1614,6 +1614,12 @@ a, button, input, textarea, .btn, .has-transition {
     max-width: initial;
     border: 0;
 }
+
+.product_thumb img{
+    max-height: 350px;
+}
+
+
 }
 
 .product_info_content{font-size: 14pt; font-family: Georgia,serif;}
