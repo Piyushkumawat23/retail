@@ -1961,6 +1961,12 @@ a, button, input, textarea, .btn, .has-transition {
  .desktop_order button[type="submit"] {
     display: none;
   }
+
+  .middle_banner{
+    height: 400px;
+}
+
+
 }
 @media only screen and (max-width: 767px) {
     .product-zoom-thumb{
@@ -2024,7 +2030,7 @@ a, button, input, textarea, .btn, .has-transition {
         padding: 0px;
     }
     .middle_banner{
-        height: 160px !important;
+        height: 160px;
     }
     .home_banner1_images{
         margin-top:15px !important;
